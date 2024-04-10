@@ -19,8 +19,8 @@ defmodule Greeter do
       "Hello, pete"
 
   """
-  @spec hello(String.t()) :: String.t()
+  @spec hello(String.t()) :: :ok
   def hello(name) do
-    "Hello, " <> name
+    "Hello, " <> name |> IO.puts
   end
 end
